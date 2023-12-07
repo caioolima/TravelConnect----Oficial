@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import Header from './components/Header/header'; // Atualize o caminho para Header.js
 import Form from './components/Form/form'; // Atualize o caminho para Form.js
-import Popup from './components/Popup/popup'; // Atualize o caminho para Popup.js
 import Footer from './components/Footer/footer'; // Atualize o caminho para Footer.js
 
 function App() {
@@ -28,8 +27,6 @@ function App() {
       <main>
         <Form onSubmit={handleLogin} buttonText="Entrar" onOpenPopup={handleOpenPopup} />
       </main>
-
-      {showPopup && <Popup onClosePopup={handleClosePopup} />}
 
       <Footer />
     </div>
